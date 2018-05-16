@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>顺其自然或者随遇而安</title>
+<script type="text/javascript" src="canvas-particle.js"></script>
+</head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<script type="text/javascript">
+	window.onload = function(){
+    //配置
+    var config = {
+        vx: 4,//点x轴速度,正为右，负为左
+        vy:  4,//点y轴速度
+        height: 2,//点高宽，其实为正方形，所以不宜太大
+        width: 2,
+        count: 200,//点个数
+        color: "121, 162, 185",//点颜色
+        stroke: "130,255,255",//线条颜色
+        dist: 6000,//点吸附距离
+        e_dist: 20000,//鼠标吸附加速距离
+        max_conn: 10//点到点最大连接数
+    }
+    //调用
+    CanvasParticle(config);
+
+	openWindow = function(){
+			var html = "About me:\r\n"
+			html += "· 大名：ZHANG.KANG\n\r";
+			html += "· 昵称：muzi\n\r";
+			html += "· Java搬砖工\n\r";
+			html += "· 手工爱好者\n\r";
+			html += "· 科幻、悬疑，推理电影爱好者\n\r";
+			html += "· 喜欢爬山，电影，跑步，网游\n\r";
+			html += "· E-mail：lucky_z_k@163.com";
+		alert(html);
+	}
+}
+</script>
+<style> 
+#aaa{
+margin:0px auto; 
+width:500px;
+}
+
+#aaa{
+position:absolute;
+top:55%;
+left:53.5%;
+margin:-150px 0 0 -150px;
+width:170px;
+height:180px;
+}
+
+a:link { 
+color:gray; 
+text-decoration:none; 
+} jo
+a:visited { 
+color:aqua; 
+text-decoration:underline; 
+} 
+a:hover { 
+color:cyan; 
+text-decoration:underline; 
+} 
+a:active { 
+color:#D200D2; 
+text-decoration:underline; 
+} 
+</style>
+<body bgcolor="black">
+<div id="mydiv">
+		<div style="text-align:center"><h1><font color="gray">一别两宽  各生欢喜</font></h1></div><hr/>
+		<div id="aaa">
+			<span><li><a href="https://user.qzone.qq.com/82605735" target="_Blank">QQ:82605735  ></a></li></span><br/>
+			<span><li><a href="http://weibo.com/muzi1410" target="_Blank">Sina:@陌北  ></a></li></span><br/>
+			<span><li><a href="https://github.com/muzi950910" target="_Blank">GitHub:muzi  ></a></li></span><br/>
+			<span><li><a href="javascript:void():;" onClick="openWindow();" target="_Blank">About me  ></a></li></span><br/>
+			<p align="right"> </p>
+		</div>
+
+</div>
+</body>
+</html>
+
+
